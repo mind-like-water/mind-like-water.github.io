@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// presets - 変数、mixinなどコンパイルに必要なもの
+@import 'presets/*'
+
+// foundation - 基本的なスタイル
+@import 'foundation/_reset.styl'
+@import 'foundation/_base.styl'
+
+// layout - 大枠となるコンテンツのレイアウトなるべくレイアウトだけにしておく？
+@import 'layout/_layout.styl'
+
+// object - パーツたち
+// object/component - 頻出する小さい単位のパーツ。buttonなど
+// .c-*
+@import 'object/component/*'
+
+// object/project - 固有のパターン
+// .p-*
+@import 'object/project/*'
+
+// object/utility - どうしてもしたい微調整などに
+// .u-*
+@import 'object/utility/*'

@@ -1,0 +1,100 @@
+// コンサルタント一覧ページのスタイル
+.p-highCareerConsultant
+  padding 50px 0 60px
+  background-color #FAF8F7
+  +sp()
+    padding 40px 10px 0
+
+  &__pageTitle
+    margin-bottom 30px
+    color $navy
+    font-size 3.6rem
+    font-weight bold
+    text-align center
+    +sp()
+      margin-bottom 25px
+      font-size 2.4rem
+
+  &__description
+    margin-bottom 30px
+    color $navy
+    font-size 2rem
+    text-align center
+    +sp()
+      margin-bottom 25px
+      font-size 1.6rem
+
+  &__contents
+    width 960px
+    margin 0 auto
+    +sp()
+      width 100%
+      margin 0 auto
+      padding-bottom 40px
+
+  &__casetteList
+    padding 30px
+    background-color #fff
+
+.p-tabBtnContainer
+  display flex
+  justify-content space-between
+  margin-bottom 30px
+  +sp()
+    margin-bottom 0
+    flex-wrap wrap
+    align-items stretch
+.p-tabBtn
+  display flex
+  height 62px
+  padding 14px
+  border 1px solid #9EA4B4
+  align-items center
+  justify-content center
+  background-color #fff
+  color #333
+  font-size 1.6rem
+  letter-spacing -1px
+  &.is-active
+    position relative
+    background url('https://www.r-agent.com//assets/imgs/specialArea/img_executive_bg_check.png') no-repeat center/cover
+    color #fff
+    &:before
+      content ""
+      position absolute
+      top calc(100% - 1px)
+      left 50%
+      transform translateX(-50%)
+      border 6px solid transparent
+      border-top 8px solid #406794
+    .p-tabBtn__icon
+      fill #fff
+  +sp()
+    height 42px
+    padding 0 1%
+    font-size 1rem
+    text-align center
+    flex-grow 1
+    & + &
+      margin-left 1.2%
+      margin-bottom 1.2%
+    &:first-of-type
+      padding 0 7%
+    &:nth-of-type(5)
+      margin-left 0
+    &.is-active
+      &:before
+        content none
+
+  &__icon
+    width 20px
+    height 20px
+    margin-right 9px
+    +sp()
+      width 16px
+      height 16px
+
+  &__text
+    line-height 1
+      +sp()
+        text-align left

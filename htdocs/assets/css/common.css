@@ -1,0 +1,580 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+q:before,
+blockquote:after,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+main {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.ua-pc a:hover:link {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+a:link {
+  cursor: pointer;
+}
+a.anchor {
+  color: $color-link;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Verdana", sans-serif;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  background: #fff;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #595959;
+  line-height: 1.5;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  color: #003a64;
+}
+.l-header__utility {
+  padding-left: 226px;
+}
+.c-consultantCasette + .c-consultantCasette {
+  margin-top: 20px;
+}
+.c-consultantCasette__head {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #003a64;
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+}
+.c-consultantCasette__body {
+  padding: 0 30px 15px 15px;
+  background-color: #fff;
+  font-size: 0;
+}
+.c-consultantCasette__initial {
+  text-align: right;
+  position: absolute;
+  right: 30px;
+}
+.c-consultantCasette__thumbnail {
+  display: inline-block;
+  width: 242px;
+  margin-right: 30px;
+  font-size: 0;
+}
+.c-consultantCasette__profile {
+  display: inline-block;
+  width: 628px;
+  min-height: 349px;
+  padding-bottom: 30px;
+  position: relative;
+  vertical-align: top;
+}
+.c-consultantCasette__img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+}
+.c-consultantCasette__type {
+  display: block;
+  width: 100%;
+  padding: 7px 10px;
+  color: #003a64;
+  border: 1px solid;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+  text-align: center;
+}
+.c-consultantCasette__profTitle {
+  margin-top: 30px;
+  color: #003a64;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.c-consultantCasette__profText {
+  margin-top: 10px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+.c-consultantCasette__link {
+  color: #003a64;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: right;
+  padding: 1em;
+}
+.c-consultantCasette__link span {
+  margin-left: 0.5em;
+  font-size: inherit;
+  line-height: 1;
+}
+.p-highCareerConsultantDetail {
+  padding-top: 60px;
+  background-color: #faf8f7;
+}
+.p-highCareerConsultantDetail__content {
+  width: 960px;
+  margin: 0 auto;
+}
+.p-highCareerConsultantDetail__link {
+  display: block;
+  width: 240px;
+  margin: 120px auto 0;
+  padding: 15px 30px;
+  color: #fff;
+  background: url("https://www.r-agent.com//assets/imgs/specialArea/img_executive_bg_check.png") no-repeat center/cover;
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.p-highCareerConsultant {
+  padding: 50px 0 60px;
+  background-color: #faf8f7;
+}
+.p-highCareerConsultant__pageTitle {
+  margin-bottom: 30px;
+  color: #003a64;
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+.p-highCareerConsultant__description {
+  margin-bottom: 30px;
+  color: #003a64;
+  font-size: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.p-highCareerConsultant__contents {
+  width: 960px;
+  margin: 0 auto;
+}
+.p-highCareerConsultant__casetteList {
+  padding: 30px;
+  background-color: #fff;
+}
+.p-tabBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.p-tabBtn {
+  display: flex;
+  height: 62px;
+  padding: 14px;
+  border: 1px solid #9ea4b4;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  font-size: 1.6rem;
+  letter-spacing: -1px;
+}
+.p-tabBtn.is-active {
+  position: relative;
+  background: url("https://www.r-agent.com//assets/imgs/specialArea/img_executive_bg_check.png") no-repeat center/cover;
+  color: #fff;
+}
+.p-tabBtn.is-active:before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top: 8px solid #406794;
+}
+.p-tabBtn.is-active .p-tabBtn__icon {
+  fill: #fff;
+}
+.p-tabBtn__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+.u-d-ib {
+  display: inline-block !important;
+}
+.u-d-i {
+  display: block !important;
+}
+.u-d-t {
+  display: table !important;
+}
+.u-d-tc {
+  display: table-cell !important;
+}
+.u-d-n {
+  display: none !important;
+}
+.u-w-full {
+  width: 100% !important;
+}
+.u-w-half {
+  width: 50% !important;
+}
+.u-w-auto {
+  width: auto !important;
+}
+.u-c-main {
+  color: $color-main !important;
+}
+.u-c-accent {
+  color: $color-accent !important;
+}
+.u-c-faccent {
+  color: $color-f-accent !important;
+}
+.u-c-sub {
+  color: $color-sub !important;
+}
+.u-c-error {
+  color: $color-error !important;
+}
+.u-c-alert {
+  color: $color-error !important;
+}
+.u-c-fmain {
+  color: $color-f-main !important;
+}
+.u-c-fapp {
+  color: $color-f-app !important;
+}
+.u-fw-b {
+  font-weight: bold !important;
+}
+.u-fw-n {
+  font-weight: normal;
+}
+.u-fw-l {
+  font-weight: lighter;
+}
+.u-ta-c {
+  text-align: center !important;
+}
+.u-ta-r {
+  text-align: right !important;
+}
+.u-ta-l {
+  text-align: left !important;
+}
+.u-mt-0 {
+  margin-top: 0 !important;
+}
+.u-ml-0 {
+  margin-left: 0 !important;
+}
+.u-mr-0 {
+  margin-right: 0 !important;
+}
+.u-mb-0 {
+  margin-bottom: 0 !important;
+}
+.u-pt-0 {
+  padding-top: 0 !important;
+}
+.u-pl-0 {
+  padding-left: 0 !important;
+}
+.u-pr-0 {
+  padding-right: 0 !important;
+}
+.u-pb-0 {
+  padding-bottom: 0 !important;
+}
+.u-pl-70 {
+  padding-left: 70px !important;
+}
+.u-f-l {
+  float: left !important;
+}
+.u-f-r {
+  float: right !important;
+}
+@media screen and (max-width: 940px){
+  .l-header__utility{
+    padding-left: 0;
+  }
+  .c-consultantCasette + .c-consultantCasette{
+    margin-top: 0;
+  }
+  .c-consultantCasette__inner{
+    background-color: #fff;
+    padding: 10px;
+  }
+  .c-consultantCasette__head{
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    margin-bottom: 13px;
+  }
+  .c-consultantCasette__body{
+    padding: 0;
+  }
+  .c-consultantCasette__thumbnail{
+    width: 37.612%;
+    margin-right: 2.989%;
+    margin-bottom: 15px;
+  }
+  .c-consultantCasette__profile{
+    width: 59%;
+    padding: 0;
+    min-height: 179.2px;
+  }
+  .c-consultantCasette__img{
+    height: auto;
+  }
+  .c-consultantCasette__profTitle{
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .c-consultantCasette__profText{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .c-consultantCasette__link{
+    font-size: 1.2rem;
+  }
+  .c-consultantCasette__link a{
+    display: block;
+    text-align: center;
+  }
+  .p-highCareerConsultantDetail{
+    padding: 40px 10px 0;
+  }
+  .p-highCareerConsultantDetail__content{
+    width: inherit;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .p-highCareerConsultantDetail__link{
+    margin: 30px auto 10px;
+    font-size: 1.4rem;
+  }
+  .p-highCareerConsultant{
+    padding: 40px 10px 0;
+  }
+  .p-highCareerConsultant__pageTitle{
+    margin-bottom: 25px;
+    font-size: 2.4rem;
+  }
+  .p-highCareerConsultant__description{
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+  }
+  .p-highCareerConsultant__contents{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .p-tabBtnContainer{
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .p-tabBtn{
+    height: 42px;
+    padding: 0 1%;
+    font-size: 1rem;
+    text-align: center;
+    flex-grow: 1;
+  }
+  .p-tabBtn + .p-tabBtn{
+    margin-left: 1.2%;
+    margin-bottom: 1.2%;
+  }
+  .p-tabBtn:first-of-type{
+    padding: 0 7%;
+  }
+  .p-tabBtn:nth-of-type(5){
+    margin-left: 0;
+  }
+  .p-tabBtn.is-active:before{
+    content: none;
+  }
+  .p-tabBtn__icon{
+    width: 16px;
+    height: 16px;
+  }
+  .p-tabBtn__text line-height 1{
+    text-align: left;
+  }
+  .u-only-pc{
+    display: none !important;
+  }
+  .u-sp-ta-c{
+    text-align: center !important;
+  }
+  .u-sp-ta-r{
+    text-align: right !important;
+  }
+  .u-sp-ta-l{
+    text-align: left !important;
+  }
+  .u-sp-f-l{
+    float: left !important;
+  }
+  .u-sp-f-r{
+    float: right !important;
+  }
+}
+@media all and (min-width: 941px){
+  .u-only-sp{
+    display: none !important;
+  }
+  .u-pc-ta-c{
+    text-align: center !important;
+  }
+  .u-pc-ta-r{
+    text-align: right !important;
+  }
+  .u-pc-ta-l{
+    text-align: left !important;
+  }
+  .u-pc-f-l{
+    float: left !important;
+  }
+  .u-pc-f-r{
+    float: right !important;
+  }
+}

@@ -1,0 +1,35 @@
+// ================================== //
+// mixin
+// ================================== //
+
+// ----------------- //
+// media queri
+// ----------------- //
+sp()
+  @media screen and (max-width: ($sp-max_width)px)
+    {block}
+// sp-landscape()
+//   @media screen and (max-width: ($sp-max_width)px) and (orientation: landscape)
+//     {block}
+
+pc()
+  @media all and (min-width: ($pc-min_width)px)
+    {block}
+
+// ----------------- //
+// helper
+// ----------------- //
+clearfix()
+  &:after
+    content:'';
+    clear:both;
+    display:block;
+
+hover-op($op = 0.8)
+  +pc()
+    &:hover
+      opacity $op
+
+// pxからvw計算
+calc-vw($val, width=$sp-psd_width)
+  (( $val / $sp-psd_width ) * 100)vw

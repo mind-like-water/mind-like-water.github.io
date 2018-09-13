@@ -1,0 +1,34 @@
+extends ./_html.pug
+
+block key
+block vars
+  -
+    var meta = {
+      title: `${consultants[key].name} | ◯◯専門コンサルタント | リクルートエージェントの管理職・ハイクラス転職情報`,
+      description: `リクルートエージェントの◯◯専門コンサルタント${consultants[key].name}紹介ページ。ハイキャリア・エグゼクティブ転職をサポートする専門コンサルタントが完全無料で転職支援。転職成功実績No.1の転職エージェントです。`,
+      keywords: `ハイキャリア,エグゼクティブ,ハイクラス,コンサルタント,転職,転職支援,サポート,転職情報,転職サイト求人,リクルートエージェント`
+    }
+    var page = 'detail'
+    var path = '../'
+
+block contents
+  section.p-highCareerConsultantDetail
+    article.p-highCareerConsultantDetail__content
+      .p-highCareerConsultant__pageTitle ハイキャリアコンサルタントのご紹介
+      h1.c-consultantCasette__head #{consultants[key].name}
+        span.c-consultantCasette__initial #{consultants[key].initial}
+      .c-consultantCasette__body
+        .c-consultantCasette__thumbnail
+          img.c-consultantCasette__img(src=`https://www.r-agent.com//assets/imgs/executive/img_${key}.png`)
+          span.c-consultantCasette__type #{consultants[key].type}
+        .c-consultantCasette__profile
+          h3.c-consultantCasette__profTitle プロフィール
+          p.c-consultantCasette__profText #{consultants[key].profile}
+        h3.c-consultantCasette__profTitle 得意分野
+        p.c-consultantCasette__profText !{consultants[key].strength}
+        h3.c-consultantCasette__profTitle メッセージ
+        p.c-consultantCasette__profText !{consultants[key].message}
+        h3.c-consultantCasette__profTitle 紹介実績例
+        p.c-consultantCasette__profText !{consultants[key].strength}
+        a.p-highCareerConsultantDetail__link(href=`/executive/consultant/?category=${consultants[key].filterNum}`) コンサルタント一覧へ
+    include ./_contact

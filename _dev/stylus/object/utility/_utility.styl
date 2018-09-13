@@ -1,0 +1,126 @@
+// utilityはemmet参考に作ってく
+//仮で入れてます
+//.is_pc/.is_spは例外として.u-つけない
+.u-only-pc
+  +sp()
+    display none!important
+.u-only-sp
+  +pc()
+    display none!important
+
+
+// display
+.u-d
+  &-ib
+    display inline-block!important
+  &-i
+    display block!important
+  &-t
+    display table!important
+  &-tc
+    display table-cell!important
+  &-n
+    display none!important
+
+// width
+.u-w
+  &-full
+    width 100%!important
+  &-half
+    width 50%!important
+  &-auto
+    width auto!important
+
+//color
+.u-c-main
+  color $color-main!important
+.u-c-accent
+  color $color-accent!important
+.u-c-faccent
+  color $color-f-accent!important
+.u-c-sub
+  color $color-sub!important
+.u-c-error
+  color $color-error!important
+.u-c-alert
+  color $color-error!important
+.u-c-fmain
+  color $color-f-main!important
+.u-c-fapp
+  color $color-f-app!important
+
+// font-height
+.u-fw
+  &-b
+    font-weight bold!important
+  &-n
+    font-weight normal
+  &-l
+    font-weight lighter
+
+// text-align
+.u-ta
+  &-c
+    text-align center!important
+  &-r
+    text-align right!important
+  &-l
+    text-align left!important
+.u-pc-ta
+  +pc()
+    &-c
+      text-align center!important
+    &-r
+      text-align right!important
+    &-l
+      text-align left!important
+.u-sp-ta
+  +sp()
+    &-c
+      text-align center!important
+    &-r
+      text-align right!important
+    &-l
+      text-align left!important
+
+// margin とりあえず0のみ
+.u-mt-0
+  margin-top 0!important
+.u-ml-0
+  margin-left 0!important
+.u-mr-0
+  margin-right 0!important
+.u-mb-0
+  margin-bottom 0!important
+
+
+// margin とりあえず0のみ
+.u-pt-0
+  padding-top 0!important
+.u-pl-0
+  padding-left 0!important
+.u-pr-0
+  padding-right 0!important
+.u-pb-0
+  padding-bottom 0!important
+
+.u-pl-70
+  padding-left 70px!important
+
+// float
+.u-f-l
+  float left!important
+.u-f-r
+  float right!important
+.u-sp-f
+  +sp()
+    &-l
+      float left!important
+    &-r
+      float right!important
+.u-pc-f
+  +pc()
+    &-l
+      float left!important
+    &-r
+      float right!important
