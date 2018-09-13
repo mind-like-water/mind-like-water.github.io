@@ -1,12 +1,12 @@
 .o-careerAdviserBreadcrumb.u-only-pc
   .o-careerAdviserBreadcrumb__body
-    a.o-careerAdviserBreadcrumb__link.a-link(href='/') 転職エージェントトップ
+    a.o-careerAdviserBreadcrumb__link.a-link(href='/') トップ
     | &nbsp;&#x3E;&nbsp;
     if page == 'detail'
-      a.o-careerAdviserBreadcrumb__link.a-link(href='/executive/') 管理職・ハイクラストップ
+      a.o-careerAdviserBreadcrumb__link.a-link(href='/executive/') 下層1
       | &nbsp;&#x3E;&nbsp;
-      a.o-careerAdviserBreadcrumb__link.a-link(href='/executive/consultant/') コンサルタントのご紹介
+      a.o-careerAdviserBreadcrumb__link.a-link(href='/executive/consultant/') 下層2
       | &nbsp;&#x3E;&nbsp; #{consultants[key].name}
     else
-      a.o-careerAdviserBreadcrumb__link.a-link(href='/executive/') 管理職・ハイクラストップ
-      | &nbsp;&#x3E;&nbsp;コンサルタントのご紹介
+      a.o-careerAdviserBreadcrumb__link.a-link(href='/executive/') 下層1
+      | &nbsp;&#x3E;&nbsp;下層2

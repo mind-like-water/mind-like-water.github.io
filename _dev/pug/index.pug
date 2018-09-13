@@ -3,9 +3,9 @@ extends ./templates/_html.pug
 block vars
   -
     var meta = {
-      title: 'ハイキャリア転職をサポートするコンサルタントのご紹介 | リクルートエージェントの管理職・ハイクラス転職情報',
-      description: 'リクルートエージェントのハイキャリア・エグゼクティブ転職をサポートする専門コンサルタントのご紹介。IT、Web、製造業、経営企画、事業企画など、各業界に精通したコンサルタントが完全無料で転職支援。転職成功実績No.1の転職エージェントです。',
-      keywords: 'ハイキャリア,エグゼクティブ,ハイクラス,コンサルタント,転職,転職支援,サポート,転職情報,転職サイト求人,リクルートエージェント'
+      title: 'example',
+      description: 'example',
+      keywords: 'example'
     }
     var page = 'top'
     var path = './'
@@ -13,49 +13,37 @@ block vars
 block contents
   section.p-highCareerConsultant
     .p-highCareerConsultant__contents
-      h1.p-highCareerConsultant__pageTitle ハイキャリアコンサルタントのご紹介
+      h1.p-highCareerConsultant__pageTitle example
       p.p-highCareerConsultant__description
-        | ハイキャリア転職をサポートする、
+        | example
         br.u-only-sp
-        | 各業界に精通した専門コンサルタントを
+        | example
         br.u-only-sp
-        | ご紹介します。
+        | example
       .p-tabBtnContainer
         a.p-tabBtn.p-tabBtn.js-switchTab(href="javascript:void(0)").is-active
           span.p-tabBtn__text すべて
         a.p-tabBtn.p-tabBtn.js-switchTab(href="javascript:void(0)")
-          svg.p-tabBtn__icon
-            use(xlink:href='#icon_laptop')
           span.p-tabBtn__text
-            | IT/
+            | example
             br
-            | コンサルティング
+            | example
         a.p-tabBtn.js-switchTab(href="javascript:void(0)")
-          svg.p-tabBtn__icon
-            use(xlink:href='#icon_globe')
           span.p-tabBtn__text
-            | インターネット
+            | example
             br
-            | サービス
+            | example
         a.p-tabBtn.js-switchTab(href="javascript:void(0)")
-          svg.p-tabBtn__icon
-            use(xlink:href='#icon_car')
           span.p-tabBtn__text
-              | マニュファク
+              | example
               br
-              | チャリング
+              | example
         a.p-tabBtn.js-switchTab(href="javascript:void(0)")
-          svg.p-tabBtn__icon
-            use(xlink:href='#icon_briefcase_medical')
-          span.p-tabBtn__text ヘルスケア
+          span.p-tabBtn__text example
         a.p-tabBtn.js-switchTab(href="javascript:void(0)")
-          svg.p-tabBtn__icon
-            use(xlink:href='#icon_user_tie')
-          span.p-tabBtn__text 管理部門
+          span.p-tabBtn__text example
         a.p-tabBtn.js-switchTab(href="javascript:void(0)")
-          svg.p-tabBtn__icon
-            use(xlink:href='#icon_japan')
-          span.p-tabBtn__text 関西
+          span.p-tabBtn__text example
       each consultant, index in consultants
         .c-consultantCasette(id=`${index}` data-filter=`${consultant.filterNum}`)
           .c-consultantCasette__inner
@@ -63,14 +51,14 @@ block contents
               span.c-consultantCasette__initial #{consultant.initial}
             .c-consultantCasette__body
               .c-consultantCasette__thumbnail
-                img.c-consultantCasette__img(src=`https://www.r-agent.com//assets/imgs/executive/img_${index}.png`)
+                img.c-consultantCasette__img(src=``)
                 span.c-consultantCasette__type #{consultant.type}
               .c-consultantCasette__profile
-                h3.c-consultantCasette__profTitle プロフィール
+                h3.c-consultantCasette__profTitle example
                 p.c-consultantCasette__profText #{consultant.profile}
-                h3.c-consultantCasette__profTitle 得意分野
+                h3.c-consultantCasette__profTitle example
                 p.c-consultantCasette__profText !{consultant.strength}
           .c-consultantCasette__link
-            a(href=`./detail/${index}`) コンサルタント(#{consultant.name})の詳細へ
+            a(href=`./detail/${index}`) example(#{consultant.name})example
               span &#x3E;
   include ./templates/_contact
